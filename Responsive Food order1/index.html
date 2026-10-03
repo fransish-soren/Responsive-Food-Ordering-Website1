@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites | Modern Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><i class="fas fa-utensils"></i> Delicious Bites</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Welcome to <span>Delicious Bites</span></h1>
+                <p>Experience the finest flavors crafted with love, fresh ingredients, and culinary excellence. Order your favorite meals online and enjoy restaurant-quality food at home.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn primary-btn">Order Now</a>
+                    <a href="#about" class="btn secondary-btn">About Us</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Delicious Food">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="section-heading">
+            <h2>Our <span>Menu</span></h2>
+            <p>Discover our mouth-watering dishes prepared with premium ingredients</p>
+        </div>
+
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="pizza">Pizza</button>
+            <button class="tab-btn" data-category="burger">Burgers</button>
+            <button class="tab-btn" data-category="pasta">Pasta</button>
+            <button class="tab-btn" data-category="dessert">Desserts</button>
+        </div>
+
+        <div class="menu-container" id="menuContainer">
+            <!-- Menu Items will be inserted by JS -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600" alt="About Us">
+            </div>
+            <div class="about-content">
+                <h2>We Serve The <span>Best Taste</span></h2>
+                <p>Since 2010, Delicious Bites has been serving exceptional food made with the freshest ingredients. Our chefs are passionate about creating dishes that bring joy to your table, combining traditional recipes with modern flavors.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Fresh & Organic Ingredients</li>
+                    <li><i class="fas fa-check-circle"></i> Expert Chefs</li>
+                    <li><i class="fas fa-check-circle"></i> Fast Home Delivery</li>
+                    <li><i class="fas fa-check-circle"></i> Affordable Prices</li>
+                </ul>
+                <a href="#menu" class="btn primary-btn">Explore Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-heading">
+            <h2>Our <span>Services</span></h2>
+            <p>What makes us different from others</p>
+        </div>
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Quality Food</h3>
+                <p>Prepared daily with fresh, locally sourced ingredients for the best taste.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-motorcycle"></i>
+                <h3>Fast Delivery</h3>
+                <p>Quick delivery right to your doorstep, hot and fresh every time.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Always here to help with your orders and answer any questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-heading">
+            <h2>Contact <span>Us</span></h2>
+            <p>Have questions? Reach out to us</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Moulvibazar, Sylhet, Bangladesh</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+880 1234 567890</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@deliciousbites.com</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn primary-btn checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Delicious Bites. All Rights Reserved | Crafted with <i class="fas fa-heart"></i> for food lovers</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
